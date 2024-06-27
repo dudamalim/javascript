@@ -1,0 +1,16 @@
+const prompt = require("prompt-sync")();
+let produto = Number(prompt("qual o código de produto?: ").trim());
+
+switch (true) {
+  case produto == 101:
+    console.log("Maça: r$3/kg");
+    break;
+  case produto == 102:
+    console.log("melancia: r$5/kg");
+    break;
+  case produto == 103:
+    console.log("Morango: R$20/kg");
+    break;
+  default:
+    console.log("produto não registrato");
+}
